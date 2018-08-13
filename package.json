@@ -1,0 +1,46 @@
+{
+  "name": "react_native_redux",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "build": " react-native run-android --variant=release",
+    "rename": "node ./bin/rename.js",
+    "log": "react-native log-android",
+    "postinstall": "remotedev-debugger — hostname localhost — port 5678 — injectserver"
+  },
+  "remotedev": {
+    "hostname": "localhost",
+    "port": 5678
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "native-base": "^2.3.9",
+    "react": "16.3.1",
+    "react-native": "0.55.3",
+    "react-native-elements": "^0.19.1",
+    "react-native-sidebar": "^0.3.0",
+    "react-native-tiles": "^1.0.1",
+    "react-navigation": "^1.1.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1",
+    "redux-logger": "^3.0.6",
+    "remote-redux-devtools": "^0.5.12",
+    "remotedev-rn-debugger": "^0.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
